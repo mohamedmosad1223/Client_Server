@@ -23,7 +23,6 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 
-	// اسم المستخدم
 	fmt.Print("Enter your name: ")
 	name, _ := reader.ReadString('\n')
 	name = strings.TrimSpace(name)
@@ -48,7 +47,6 @@ func main() {
 			break
 		}
 
-		// عرض التاريخ كله
 		fmt.Println("\n--- Chat History ---")
 		for _, m := range reply {
 			fmt.Println(m)

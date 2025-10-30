@@ -21,10 +21,8 @@ func (c *ChatServer) SendMessage(msg Message, reply *[]string) error {
 	c.mu.Lock()
 	defer c.mu.Unlock()
 
-	// أضف الرسالة للتاريخ
 	c.messages = append(c.messages, fmt.Sprintf("%s: %s", msg.Sender, msg.Content))
 
-	// رجع كل التاريخ للعميل
 	*reply = c.messages
 	return nil
 }
