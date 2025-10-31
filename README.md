@@ -1,7 +1,7 @@
-Go RPC Chat Project
+# Go RPC Chat Project
 A simple client-server chat application built in Go using RPC (Remote Procedure Call). This project demonstrates a basic chat system where multiple clients can connect to a server, send messages, and view the chat history.
 
-🚀 Features
+# 🚀 Features
 Connect multiple clients to a single server.
 
 Send and receive messages in real-time.
@@ -10,7 +10,7 @@ View the full chat history after each message is sent.
 
 Thread-safe message handling on the server using sync.Mutex.
 
-📁 Project Structure
+# 📁 Project Structure
 client-server/
 ├── client/
 │   └── client.go
@@ -20,13 +20,13 @@ client/: Contains the client-side Go program that connects to the server.
 
 server/: Contains the server-side Go program that manages the chat.
 
-🏁 Getting Started
+## 🏁 Getting Started
 Prerequisites
 Go (version 1.18+ recommended)
 
 A basic understanding of Go programming.
 
-🛠️ Installation & Running
+## 🛠️ Installation & Running
 Clone the repository.
 
 Run the Server Open a terminal and navigate to the server directory:
@@ -62,7 +62,7 @@ Alice: Hello, everyone!
 -------------------
 > exit
 Exiting...
-🔧 How It Works
+## 🔧 How It Works
 Server
 Listens on TCP port 1234.
 
